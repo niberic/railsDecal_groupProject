@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @time_block.day %>
+</p>
+
+<p>
+  <strong>When:</strong>
+  <%= @time_block.when %>
+</p>
+
+<p>
+  <strong>Meeting:</strong>
+  <%= @time_block.meeting %>
+</p>
+
+<%= link_to 'Edit', edit_time_block_path(@time_block) %> |
+<%= link_to 'Back', time_blocks_path %>
