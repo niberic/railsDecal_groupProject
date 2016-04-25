@@ -4,12 +4,13 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    curruser=current_user()
-    if curruser != nil
-      @events = curruser.events
-    else
-      @events = Event.all
-    end
+    #curruser=current_user()
+    #if curruser != nil
+    #  @events = curruser.events
+    #else
+    #  @events = Event.all
+    #end
+    @events = Event.all
   end
 
   # GET /events/1
