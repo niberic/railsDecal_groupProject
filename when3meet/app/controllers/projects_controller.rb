@@ -10,6 +10,9 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
+    @project = Project.find(params[:id])
+    tempname=@project.name
+    @events=Event.where("project_name= ?", tempname)
   end
 
   # GET /projects/new
