@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'home#home'
   devise_for :users
   resources :events
-
+  resources :projects
   resources :time_blocks
 
   # The priority is based upon order of creation: first created -> highest priority.
